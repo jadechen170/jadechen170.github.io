@@ -5,6 +5,8 @@ import LoraSemiBold from "../static/Lora-SemiBold.ttf";
 
 export const theme = {
     navBlue: '#3E4E5B',
+    bannerBlue: '#B9CADA',
+    magenta: '#814F67',
 
 
     phone: "480px",

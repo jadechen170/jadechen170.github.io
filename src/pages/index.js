@@ -3,10 +3,12 @@ import { theme } from "../theme/GlobalStyles.js"
 
 import Layout from "../components/layout.js"
 
+import Banner from "../components/Banner.js"
+
 // markup
 const IndexPage = () => (
   <Layout>
-
+    <Banner />
   </Layout>
 )
 
