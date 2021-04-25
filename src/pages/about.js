@@ -4,10 +4,10 @@ import { theme } from "../theme/GlobalStyles.js"
 import Layout from "../components/layout.js"
 
 // markup
-const IndexPage = () => (
+const AboutPage = () => (
   <Layout>
 
   </Layout>
 )
 
-export default IndexPage
+export default AboutPage
