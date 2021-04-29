@@ -6,6 +6,7 @@ import LoraSemiBold from "../static/Lora-SemiBold.ttf";
 export const theme = {
     navBlue: '#3E4E5B',
     bannerBlue: '#B9CADA',
+    lightBlue: '#ECF3F9',
     magenta: '#814F67',
 
 
@@ -60,6 +61,10 @@ export const GlobalStyles = createGlobalStyle`
             text-decoration: none;
             
         }
+    }
+
+    p {
+        font-size: 1.2rem;
     }
 
     a:hover {

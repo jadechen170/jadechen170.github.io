@@ -12,9 +12,7 @@ const Container = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    @media (min-width: ${theme.tablet}) {
-        
-    }
+    background: ${theme.bannerBlue};
 `
 const Text = styled.p`
     color: ${theme.navBlue};
