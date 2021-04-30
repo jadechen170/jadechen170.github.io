@@ -14,6 +14,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   margin: auto;
+  padding-bottom: 6rem;
 `
 const DesignItem = styled.div`
   padding-top: 2rem;

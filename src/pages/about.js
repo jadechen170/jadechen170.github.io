@@ -4,60 +4,89 @@ import styled from "styled-components"
 
 import Layout from "../components/layout.js"
 import Arrow from "../images/arrow.svg"
+import AboutBanner from "../components/AboutBanner.js"
+import SubHeading from "../components/SubHeading.js"
 
-const TextContainer = styled.div`
-    width: 50%;
-    padding: 3rem 6rem;
-
-`     
-const Heading = styled.h1`
-    font-size: 2.5rem;
-    @media (min-width: ${theme.tablet}) {
-        font-size: 3rem;
-    }
+const Section = styled.div`
+  background-color: ${props => props.blue ? theme.lightBlue : "none"};
+  padding: 3rem;
+  @media (min-width: ${theme.tablet}) {
+      padding: 3rem 3rem 3rem 6rem;
+  }
 `
-const Name = styled.span`
-    color: ${theme.magenta};
+const Row = styled.div`
+  display: flex;
+  padding-top: 1.5rem;
+  flex-direction: column;
+  @media (min-width: ${theme.tablet}) {
+    flex-direction: row;
+  }
 `
-const Description = styled.p`
-    line-height: 2rem;
-`
-const Resume = styled.a`
-    text-decoration: none;
-    font-weight: bold;
-`
-const Animation = styled.span`
-
-  transition: 1s ease-in-out;
-  &:hover { 
-    position: fixed;
-    transform: translate(0, -2px);
-    transition: 1s ease-in-out;
+const Box = styled.div`
+  padding-right: 1rem;
+  width: 100%;
+  @media (min-width: ${theme.tablet}) {
+    padding-right: 3rem;
+    width: 30%;
   }
 `
 
 // markup
-const AboutPage = () => (
-  <Layout>
-      <TextContainer>
-        <Heading>
-          Hi! I'm <Name>Jade.</Name>
-        </Heading>
-        <Description>
-          I’m a rising senior at Columbia University studying computer science on the graphics and vision track. (I’m looking for summer 2022 internship opportunities!)
-        </Description>
-        <Description>
-          To me, technology at its core is a creative enterprise. Problem solving in new ways and building meaningful applications provides me an outlet for impactful innovation and a space for intellectual curiosity, both of which drive my sense of purpose and fulfillment. As I continue to code and create, I aim to deliver fresh and interesting experiences to users, and I strive to contribute to the development of new technologies that will define our future.
-        </Description>
-        <Description>
-          See my <Animation><Resume href="https://drive.google.com/file/d/1ba8YDHD5NvtUvttZQXGarFcbnhEkV11o/view?usp=sharing">
-            <Name>Resume</Name> <img src={Arrow} style={{color: theme.magenta}}/>
-          </Resume></Animation>
-         
-        </Description>
+const AboutPage = () => {
 
-      </TextContainer>
-  </Layout>
-)
+  return (
+    <Layout>
+      <AboutBanner />
+
+      <Section blue>
+        <SubHeading text="Relevant Coursework" />
+        <Row>
+          <Box>
+            <p>Computer Graphics.</p>
+            <p>Databases.</p>
+          </Box>
+          <Box>
+            <p>Artificial Intelligence.</p>
+            <p>Natural Language Processing.</p>
+          </Box>
+          <Box>
+            <p>Computer Systems.</p>
+            <p>Computer Science Theory.</p>
+          </Box>
+        </Row>
+      </Section>
+
+      <Section>
+        <SubHeading text="Other Work Experience" />
+        <Row>
+          <Box>
+            <h3>Intercollegiate Chamber Music Festival</h3>
+            <h3>Executive Producer</h3>
+            <p>
+              I organize masterclasses, panels, and performances in collaboration with world renowned artists and the Chamber Music Society of Lincoln Center. 
+            </p>
+          </Box>
+          <Box>
+            <h3>Kairos Partners</h3>
+            <h3>IT Consultant Intern</h3>
+            <p>
+              I helped implement cost efficient solutions for client infrastructures and also streamlined internal communciation by establishing technical documentation protocols.
+            </p>
+          </Box>
+          <Box>
+            <h3>Workville</h3>
+            <h3>Marketing Intern & Community Manager</h3>
+            <p>
+              I created content to increase online presence and conducted market research to facilitate partnership negotiations. I also engaged with a community of 400+ daily.
+            </p>
+          </Box>
+        </Row>
+      </Section>
+    
+   </Layout>
+
+  )
+}
+
 
 export default AboutPage

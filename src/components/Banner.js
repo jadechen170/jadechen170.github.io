@@ -45,6 +45,13 @@ const NextLink = styled(Link)`
         text-decoration: underline;
     }
 `
+const Animation = styled.span`
+  position: relative;
+  &:hover img { 
+    transform: translate(8px);
+    transition: 0.7s ease-in-out;
+  }
+`
 
 
 const Banner = () => {
@@ -57,9 +64,11 @@ const Banner = () => {
                 <Description>
                     I’m a software engineer studying computer science at Columbia University. Currently, I am interning as a Summer Engineering Analyst at Goldman Sachs.
                 </Description>
-                <NextLink to="/projects/">
-                    See my work  <img src={Arrow} /> 
-                </NextLink>
+                <Animation>
+                    <NextLink to="/projects/">
+                        See my work  <img src={Arrow} /> 
+                    </NextLink>
+                </Animation>
             </TextContainer>
             
         </Container>

@@ -7,7 +7,10 @@ export const theme = {
     navBlue: '#3E4E5B',
     bannerBlue: '#B9CADA',
     lightBlue: '#ECF3F9',
+    footerBlue: '#394855',
     magenta: '#814F67',
+    white: '#ffffff',
+    textBlue: '#1A2A36',
 
 
     phone: "480px",
@@ -55,6 +58,7 @@ export const GlobalStyles = createGlobalStyle`
         font-family: 'Lora Regular';
         margin: 0;
         padding: 0;
+        color: ${theme.textBlue};
 
         a:hover, 
         a:focus {
@@ -64,6 +68,10 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     p {
+        font-size: 1.2rem;
+    }
+
+    a {
         font-size: 1.2rem;
     }
 

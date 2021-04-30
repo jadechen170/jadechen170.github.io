@@ -13,6 +13,7 @@ import LinkIcon from '../images/link.svg';
 const CenterWrapper = styled.div`
     width: 90%;
     margin: auto;
+    padding-bottom: 6rem;
     @media (min-width: ${theme.mobile}) {
         width: 80%;
     }

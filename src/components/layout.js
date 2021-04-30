@@ -7,6 +7,7 @@ import { GlobalStyles } from "../theme/GlobalStyles"
 import {theme} from "../theme/GlobalStyles"
 
 import NavBar from "./NavBar.js"
+import Footer from "./Footer.js"
 
 const Container = styled.div`
   margin: 0;
@@ -41,7 +42,8 @@ const Layout = ({ children }) => {
       />
       <Container>
         <main>{children}</main>
-      </Container>  
+      </Container>
+      <Footer />  
     </>
   )
 }
