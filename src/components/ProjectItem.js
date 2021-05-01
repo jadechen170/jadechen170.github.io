@@ -1,6 +1,5 @@
 import * as React from "react";
 import styled from "styled-components";
-import PropTypes from "prop-types"
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image'
 
@@ -146,7 +145,7 @@ const ProjectItem = () => {
 
     // take query data and map into Img components
     const images = data.allFile.edges.map((edge) => (
-    <Img
+    <Img key={edge.node.id}
         style={{width: "100%"}}
         fluid={edge.node.childImageSharp.fluid}
         key={edge.node.id}
@@ -158,7 +157,7 @@ const ProjectItem = () => {
     const projectData = zip(projectTextData, images);
 
     const projectItems = projectData.map( item => (
-        <Container hasImage={item[1]}>
+        <Container hasImage={item[1]} key={item[0].title}>
             <ImgContainer hasImage={item[1]}>
                 {item[1]}
             </ImgContainer>

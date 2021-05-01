@@ -25,6 +25,7 @@ const SubHeading = ({ text, title }) => {
 
 SubHeading.propTypes = {
     text: PropTypes.string.isRequired,
+    title: PropTypes.bool,
 }
 
 export default SubHeading;

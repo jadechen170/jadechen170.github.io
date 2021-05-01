@@ -1,6 +1,5 @@
 import * as React from "react";
 import styled from "styled-components";
-
 import {theme} from "../theme/GlobalStyles"
 
 import CustomLink from "../components/custom-link.js"
@@ -14,7 +13,7 @@ const Container = styled.div`
     text-align: center;
     background: ${theme.bannerBlue};
 `
-const Text = styled.p`
+const Text = styled.div`
     color: ${theme.navBlue};
     padding: 0.5rem 1rem;
     &:first-child {
@@ -40,16 +39,15 @@ const Text = styled.p`
 const NavBar = ({menuLinks}) => {
 
     const links = menuLinks.map(menuLink => (
-        <Text>
+        <Text key={menuLink.title}>
              <CustomLink
                 to={menuLink.link}
                 displayText={menuLink.title}
                 linkcolor={ theme.navBlue }
             />
         </Text>
-        
-       
-    ))
+   
+    ));
 
     return (
         <Container>

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Link } from "gatsby"
 import {theme} from "../theme/GlobalStyles"
 
-import Arrow from "../images/arrow.svg"
 
 const Container = styled.div`
     width: 100%;

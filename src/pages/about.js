@@ -3,7 +3,6 @@ import { theme } from "../theme/GlobalStyles.js"
 import styled from "styled-components"
 
 import Layout from "../components/layout.js"
-import Arrow from "../images/arrow.svg"
 import AboutBanner from "../components/AboutBanner.js"
 import SubHeading from "../components/SubHeading.js"
 

@@ -66,7 +66,7 @@ const Banner = () => {
                 </Description>
                 <Animation>
                     <NextLink to="/projects/">
-                        See my work  <img src={Arrow} /> 
+                        See my work  <img src={Arrow} alt="arrow"/> 
                     </NextLink>
                 </Animation>
             </TextContainer>

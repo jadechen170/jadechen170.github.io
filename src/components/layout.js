@@ -6,8 +6,8 @@ import styled from "styled-components"
 import { GlobalStyles } from "../theme/GlobalStyles"
 import {theme} from "../theme/GlobalStyles"
 
-import NavBar from "./NavBar.js"
-import Footer from "./Footer.js"
+import NavBar from "../components/NavBar.js"
+import Footer from "../components/Footer.js"
 
 const Container = styled.div`
   margin: 0;

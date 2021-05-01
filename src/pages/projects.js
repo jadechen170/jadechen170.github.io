@@ -1,8 +1,5 @@
 import * as React from "react"
 import styled from "styled-components";
-import { theme } from "../theme/GlobalStyles.js"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
 
 import Layout from "../components/layout.js"
 
@@ -21,7 +18,7 @@ const ProjectsPage = () => {
   return ( 
     <Layout>
       <Container>
-        <SubHeading text="My Projects" title/>
+        <SubHeading text="My Projects" title={true}/>
       </Container>
       <ProjectItem />
     </Layout>

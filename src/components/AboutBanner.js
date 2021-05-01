@@ -73,7 +73,7 @@ const Banner = () => {
                 </Description>
                 <Description>
                 See my <Animation> <Resume href="https://drive.google.com/file/d/1ba8YDHD5NvtUvttZQXGarFcbnhEkV11o/view?usp=sharing">
-                <Name>Resume</Name> <img src={Arrow} style={{color: theme.magenta}}/> 
+                <Name>Resume</Name> <img src={Arrow} style={{color: theme.magenta}} alt="arrow"/> 
                 </Resume> </Animation>
                 </Description>
             </TextContainer>

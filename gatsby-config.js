@@ -24,6 +24,9 @@ module.exports = {
           }
         ],
     },
+    flags: {
+      DEV_SSR: true
+    },
     plugins: [
         {
             resolve: `gatsby-plugin-sitemap`,
@@ -65,6 +68,20 @@ module.exports = {
         },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
-        `gatsby-plugin-image`
+        `gatsby-plugin-image`,
+        `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-styled-components`,
+        {
+          resolve: `gatsby-plugin-manifest`,
+          options: {
+            name: `Jade Chen`,
+            short_name: `Jade Chen`,
+            start_url: `/`,
+            background_color: '#ECF3F9',
+            theme_color: '#ECF3F9',
+            display: `minimal-ui`,
+            icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+          },
+        },
     ]
 }

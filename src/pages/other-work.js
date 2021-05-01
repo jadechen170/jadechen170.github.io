@@ -1,7 +1,6 @@
 import * as React from "react"
 import { theme } from "../theme/GlobalStyles.js"
 import styled from "styled-components"
-import { graphql, useStaticQuery } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout.js"
@@ -49,7 +48,7 @@ const OtherWorkPage = () => {
   return (
     <Layout>
       <Container>
-        <SubHeading text="A snippet of my other passions" title />
+        <SubHeading text="A snippet of my other passions" title={true} />
         <p></p>
 
         <SubHeading text="UI/UX design" />
