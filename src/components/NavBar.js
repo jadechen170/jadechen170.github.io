@@ -15,7 +15,7 @@ const Container = styled.div`
 `
 const Text = styled.div`
     color: ${theme.navBlue};
-    padding: 0.5rem 1rem;
+    padding: 2rem 1rem;
     &:first-child {
         text-decoration: underline;
         width: 100%;
@@ -25,10 +25,10 @@ const Text = styled.div`
         flex: 1;
     }
     @media (min-width: ${theme.tablet}) {
-        padding: 2rem 3rem;
+        padding: 3rem;
         &:first-child {
             width: auto;
-            padding: 2rem 3rem;
+            padding: 3rem;
         }
         &:not-first-child{
             flex: row;
