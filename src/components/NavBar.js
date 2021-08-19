@@ -17,7 +17,7 @@ const Text = styled.div`
     color: ${theme.navBlue};
     padding: 2rem 1rem;
     &:first-child {
-        text-decoration: underline;
+        font-weight: bold;
         width: 100%;
         padding: 2.5rem 0 0 0;
     }

@@ -53,7 +53,7 @@ const OtherWorkPage = () => {
 
         <SubHeading text="UI/UX design" />
         <Blurb>
-          While code has its own aesthetic, sometimes its nice to take a break from typing. Click on images to view slide deck!
+          There's no product without a design. Click on the images below to view the slide deck for some of my designs!
         </Blurb>
 
         <DesignItem>
@@ -83,7 +83,7 @@ const OtherWorkPage = () => {
         </MusicItem>
 
         <MusicItem>
-          <SubHeading text="Rachmoninoff Piano Concerto No. 2, I. Moderato" />
+          <SubHeading text="Rachmaninoff Piano Concerto No. 2, I. Moderato" />
           <Video>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Ex7lrabMpQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </Video>

@@ -10,14 +10,27 @@ const Container = styled.div`
     display: flex;
     padding: 3rem 0;
     flex-direction: column;
+    justify-content: center;
+    @media (min-width: ${theme.mobile}) {
+        flex-direction: row;
+    }
+`
+const Wrapper = styled.div`
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @media (min-width: ${theme.mobile}) {
         flex-direction: row;
     }
 `
 const Name = styled.div`
-    flex-basis: 45%;
+    flex-basis: 30%;
     color: ${theme.lightBlue};
-    padding-left: 3rem;
+    padding: 2rem 0 0 3rem;
+    @media (min-width: ${theme.mobile}) {
+        padding: 0 1rem 0 0;
+    }
     h3 {
         margin: 0;
     }
@@ -49,22 +62,24 @@ const Links = styled.div`
 const Footer = () => {
     return (
         <Container>
-            <Name>
-                <h3>Jade Chen</h3>
-                <p>Designed and built by me.</p>
-            </Name>
-            <Links>
-                <a href="mailto:jade.chen@columbia.edu" aria-label="email">Email me. </a>  
-                <a href="https://www.linkedin.com/in/jade-chen-321a18173/" aria-label="LinkedIn">Connect on LinkedIn.</a>
-                <a href="https://github.com/jadechen170" aria-label="Github">View my Github.</a>
-                <a href="https://drive.google.com/file/d/1ba8YDHD5NvtUvttZQXGarFcbnhEkV11o/view?usp=sharing" aria-label="Resume">Download my resume.</a>
-            </Links>
-            <Links>
-                <Link to="/">Home.</Link>
-                <Link to="/projects/">Projects.</Link>
-                <Link to="/other-work/">Other work.</Link>
-                <Link to="/about/">About.</Link>
-            </Links>
+            <Wrapper>
+                <Name>
+                    <h3>Jade Chen</h3>
+                    <p>Designed and built by me.</p>
+                </Name>
+                <Links>
+                    <a href="mailto:jade.chen@columbia.edu" aria-label="email">Email me. </a>  
+                    <a href="https://www.linkedin.com/in/jade-chen-321a18173/" aria-label="LinkedIn">Connect on LinkedIn.</a>
+                    <a href="https://github.com/jadechen170" aria-label="Github">View my Github.</a>
+                    <a href="https://drive.google.com/file/d/1ba8YDHD5NvtUvttZQXGarFcbnhEkV11o/view?usp=sharing" aria-label="Resume">Download my resume.</a>
+                </Links>
+                <Links>
+                    <Link to="/">Home.</Link>
+                    <Link to="/projects/">Projects.</Link>
+                    <Link to="/other-work/">Other work.</Link>
+                    <Link to="/about/">About.</Link>
+                </Links>
+            </Wrapper>
         </Container>
     )
 }

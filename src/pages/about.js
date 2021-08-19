@@ -43,6 +43,7 @@ const AboutPage = () => {
           <Box>
             <p>Computer Graphics.</p>
             <p>Databases.</p>
+            <p>Cryptography.</p>
           </Box>
           <Box>
             <p>Artificial Intelligence.</p>

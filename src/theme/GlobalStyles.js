@@ -45,7 +45,6 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     * {
-        user-select: none;
         outline: none;
     }
 

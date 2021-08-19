@@ -66,10 +66,10 @@ const Banner = () => {
                 Hi! I'm <Name>Jade.</Name>
                 </Heading>
                 <Description>
-                I’m a rising senior at Columbia University studying computer science on the graphics and vision track. (I’m looking for summer 2022 internship opportunities!)
+                I’m a senior at Columbia University studying computer science on the graphics and vision track. Currently looking for new grad positions!
                 </Description>
                 <Description>
-                To me, technology at its core is a creative enterprise. Problem solving in new ways and building meaningful applications provides me an outlet for impactful innovation and a space for intellectual curiosity, both of which drive my sense of purpose and fulfillment. As I continue to code and create, I aim to deliver fresh and interesting experiences to users, and I strive to contribute to the development of new technologies that will define our future.
+                To me, technology is a creative enterprise. Problem solving in new ways and building meaningful applications provides me an outlet for impactful innovation and a space for intellectual curiosity, both of which drive my sense of purpose and fulfillment. As I continue to code and create, I aim to deliver fresh and interesting experiences to users, and I strive to contribute to the development of new technologies for our future.
                 </Description>
                 <Description>
                 See my <Animation> <Resume href="https://drive.google.com/file/d/1ba8YDHD5NvtUvttZQXGarFcbnhEkV11o/view?usp=sharing">

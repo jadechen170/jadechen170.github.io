@@ -75,7 +75,7 @@ const ImgContainer = styled.div`
 const projectTextData =
     [
         {
-            title: "Music Visualization",
+            title: "Animated Album Cover",
             description: "Developed a tool that creates an animated album cover for a song. After analyzing audio frequencies and amplitude levels, I selected multiple key elements (beats, middle frequency ranges, etc.) to represent as visuals  in order to create a comprehensive and representative visualization of the song.",
             stack: "javascript, p5.js, html/css",
             github: "https://github.com/jadechen170/animated-album-cover",
@@ -86,6 +86,13 @@ const projectTextData =
             description: "Implemented a Monte Carlo rendering ray tracer using global illumination and a Russian Roulette termination algorithm. Also includes algorithms for direct illumination and ambient occlusion renderers.",
             stack: "OpenGL, Java",
             github: "https://github.com/jadechen170/ray_tracer"
+        },
+        {
+            title: "Flower Power",
+            description: "Together with CU Game Development, I coded a pass and play strategy game combining elements from Catan and Civilization. This was my first game created in Unity, and it features complex interactions such as tile expansion, marketplace transactions, and trading.",
+            stack: "C#, Unity",
+            github: "https://github.com/Yiwen-Gao/flower-power",
+            link: "https://cugamedev.itch.io/flower-power"
         },
         {
             title: "Eden Chen Music",

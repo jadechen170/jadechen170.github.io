@@ -17,7 +17,6 @@ const Container = styled.div`
 const TextContainer = styled.div`
     width: 80%;
     margin: 4rem 0;
-    text-align: center;
     @media (min-width: ${theme.tablet}) {
         width: 50%;
         margin: 4rem 0 8rem 0;
@@ -32,7 +31,7 @@ const Heading = styled.h1`
 const Name = styled.span`
     color: ${theme.magenta};
 `
-const Description = styled.h2`
+const Description = styled.p`
     line-height: 2.5rem;
     font-size: 1.4rem;
 `
@@ -62,7 +61,10 @@ const Banner = () => {
                     Hi! I'm <Name>Jade.</Name>
                 </Heading>
                 <Description>
-                    I’m a software engineer studying computer science at Columbia University. Currently, I am interning as a Summer Engineering Analyst at Goldman Sachs.
+                    I’m a software engineer studying computer science at Columbia University, graduating December 2021. 
+                </Description>
+                <Description>
+                    Previously, I've worked as an undergraduate researcher at Barnard Human Computer Interaction Lab, and I've just wrapped up my summer internship as an Engineering Analyst at Goldman Sachs.
                 </Description>
                 <Animation>
                     <NextLink to="/projects/">
